@@ -1,0 +1,284 @@
+/* ================================================================
+   SETUNXT — SHARED ANIMATION LIBRARY
+   Brand Colors: Blue #1a6fd4  |  Orange #f07c1a
+   Bridge + WiFi theme → Connectivity, Speed, Reliability
+   ================================================================ */
+
+/* ── Keyframes ──────────────────────────────────────────────── */
+
+@keyframes sn-fadeInUp {
+  from { opacity: 0; transform: translateY(36px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes sn-fadeInDown {
+  from { opacity: 0; transform: translateY(-28px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes sn-fadeInLeft {
+  from { opacity: 0; transform: translateX(-52px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+@keyframes sn-fadeInRight {
+  from { opacity: 0; transform: translateX(52px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+@keyframes sn-scaleIn {
+  from { opacity: 0; transform: scale(0.86); }
+  to   { opacity: 1; transform: scale(1); }
+}
+@keyframes sn-blurIn {
+  from { opacity: 0; filter: blur(10px); transform: translateY(16px); }
+  to   { opacity: 1; filter: blur(0px); transform: translateY(0); }
+}
+
+/* Floating Y-axis for phone mockup and chips */
+@keyframes sn-floatY {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-14px); }
+}
+@keyframes sn-floatY-sm {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-7px); }
+}
+
+/* Drifting background orbs */
+@keyframes sn-orb-drift-a {
+  0%   { transform: translate(0, 0) scale(1); }
+  33%  { transform: translate(40px, -25px) scale(1.06); }
+  66%  { transform: translate(-25px, 20px) scale(0.94); }
+  100% { transform: translate(0, 0) scale(1); }
+}
+@keyframes sn-orb-drift-b {
+  0%   { transform: translate(0, 0) scale(1); }
+  40%  { transform: translate(-30px, 30px) scale(1.04); }
+  80%  { transform: translate(20px, -18px) scale(0.96); }
+  100% { transform: translate(0, 0) scale(1); }
+}
+
+/* Shimmer sweep — for text & buttons */
+@keyframes sn-shimmer {
+  0%   { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+/* Gradient bg shift — for hero/CTA background accent */
+@keyframes sn-gradientShift {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Glow pulse for CTAs */
+@keyframes sn-glowPulse-blue {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(26,111,212,0.5), 0 8px 24px rgba(26,111,212,0.3); }
+  50%       { box-shadow: 0 0 0 10px rgba(26,111,212,0), 0 8px 24px rgba(26,111,212,0.3); }
+}
+@keyframes sn-glowPulse-orange {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(240,124,26,0.5), 0 8px 24px rgba(240,124,26,0.3); }
+  50%       { box-shadow: 0 0 0 10px rgba(240,124,26,0), 0 8px 24px rgba(240,124,26,0.3); }
+}
+
+/* Badge dot pulse */
+@keyframes sn-dot-pulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50%       { transform: scale(1.5); opacity: 0.6; }
+}
+
+/* Scroll progress bar */
+@keyframes sn-progressGrow {
+  from { width: 0; }
+}
+
+/* Spinning slow — for decorative ring elements */
+@keyframes sn-spin-slow {
+  to { transform: rotate(360deg); }
+}
+
+/* Bar fill from left */
+@keyframes sn-barFill {
+  from { transform: scaleX(0); transform-origin: left; }
+  to   { transform: scaleX(1); transform-origin: left; }
+}
+
+/* Step connector line draw */
+@keyframes sn-lineDraw {
+  from { clip-path: inset(0 100% 0 0); }
+  to   { clip-path: inset(0 0% 0 0); }
+}
+
+/* Card pop-in from bottom */
+@keyframes sn-cardPop {
+  0%   { opacity: 0; transform: translateY(30px) scale(0.96); }
+  70%  { transform: translateY(-4px) scale(1.01); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+/* ── Scroll-Reveal Classes ───────────────────────────────────── */
+/* Used by IntersectionObserver in animations.js */
+
+.sn-reveal,
+.sn-reveal-left,
+.sn-reveal-right,
+.sn-reveal-scale,
+.sn-reveal-blur {
+  opacity: 0;
+  will-change: opacity, transform;
+  transition:
+    opacity  0.72s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.72s cubic-bezier(0.22, 1, 0.36, 1),
+    filter   0.72s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.sn-reveal        { transform: translateY(38px); }
+.sn-reveal-left   { transform: translateX(-50px); }
+.sn-reveal-right  { transform: translateX(50px); }
+.sn-reveal-scale  { transform: scale(0.88); }
+.sn-reveal-blur   { transform: translateY(16px); filter: blur(8px); }
+
+.sn-reveal.sn-visible,
+.sn-reveal-left.sn-visible,
+.sn-reveal-right.sn-visible,
+.sn-reveal-scale.sn-visible,
+.sn-reveal-blur.sn-visible {
+  opacity: 1;
+  transform: none;
+  filter: none;
+}
+
+/* ── Stagger Delays ──────────────────────────────────────────── */
+.sn-d-1 { transition-delay: 0.08s !important; }
+.sn-d-2 { transition-delay: 0.18s !important; }
+.sn-d-3 { transition-delay: 0.28s !important; }
+.sn-d-4 { transition-delay: 0.38s !important; }
+.sn-d-5 { transition-delay: 0.48s !important; }
+.sn-d-6 { transition-delay: 0.58s !important; }
+.sn-d-7 { transition-delay: 0.68s !important; }
+.sn-d-8 { transition-delay: 0.78s !important; }
+
+/* ── Page / Hero Entrance (CSS @keyframe, no JS needed) ──────── */
+.sn-hero-enter-left {
+  animation: sn-fadeInLeft 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+.sn-hero-enter-right {
+  animation: sn-fadeInRight 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.15s both;
+}
+.sn-hero-enter-up {
+  animation: sn-fadeInUp 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+.sn-hero-enter-up-delayed {
+  animation: sn-fadeInUp 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.25s both;
+}
+.sn-auth-enter {
+  animation: sn-fadeInUp 0.75s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* ── Background Orbs ─────────────────────────────────────────── */
+.sn-orb {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  will-change: transform;
+}
+.sn-orb-1 { animation: sn-orb-drift-a 14s ease-in-out infinite; }
+.sn-orb-2 { animation: sn-orb-drift-b 18s ease-in-out infinite; }
+.sn-orb-3 { animation: sn-orb-drift-a 22s ease-in-out infinite 4s; }
+
+/* ── Shimmer Text Effect ─────────────────────────────────────── */
+.sn-text-shimmer {
+  background: linear-gradient(
+    90deg,
+    #1a6fd4 0%,
+    #2d88f0 30%,
+    #f07c1a 60%,
+    #1a6fd4 100%
+  );
+  background-size: 250% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: sn-shimmer 5s linear infinite;
+}
+
+/* ── Button Sweep Shine ──────────────────────────────────────── */
+.sn-btn-shine {
+  position: relative;
+  overflow: hidden;
+}
+.sn-btn-shine::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.22) 50%, transparent 100%);
+  transform: translateX(-120%);
+  transition: transform 0.55s ease;
+  pointer-events: none;
+}
+.sn-btn-shine:hover::after {
+  transform: translateX(120%);
+}
+
+/* ── Gradient Border on Hover ────────────────────────────────── */
+.sn-gd-border {
+  position: relative;
+}
+.sn-gd-border::after {
+  content: '';
+  position: absolute;
+  inset: -1.5px;
+  border-radius: inherit;
+  background: linear-gradient(135deg, #1a6fd4, #f07c1a);
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.32s ease;
+}
+.sn-gd-border:hover::after {
+  opacity: 1;
+}
+
+/* ── Counter class (styling) ─────────────────────────────────── */
+.sn-counter {
+  display: inline-block;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ── Scroll Progress Bar ─────────────────────────────────────── */
+#sn-progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  background: linear-gradient(90deg, #1a6fd4, #f07c1a);
+  z-index: 10000;
+  transition: width 0.1s linear;
+  border-radius: 0 2px 2px 0;
+}
+
+/* ── Animated Typing Cursor ──────────────────────────────────── */
+.sn-cursor::after {
+  content: '|';
+  animation: sn-dot-pulse 1s step-end infinite;
+}
+
+/* ── Floating Badge / Chip Float ─────────────────────────────── */
+.sn-float-1 { animation: sn-floatY 4.5s ease-in-out infinite; }
+.sn-float-2 { animation: sn-floatY 5.5s ease-in-out infinite 0.8s; }
+.sn-float-3 { animation: sn-floatY-sm 3.5s ease-in-out infinite 0.4s; }
+
+/* ── Reduce Motion (Accessibility) ──────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  .sn-reveal, .sn-reveal-left, .sn-reveal-right,
+  .sn-reveal-scale, .sn-reveal-blur {
+    opacity: 1 !important;
+    transform: none !important;
+    filter: none !important;
+    transition: none !important;
+  }
+  .sn-hero-enter-left, .sn-hero-enter-right,
+  .sn-hero-enter-up, .sn-hero-enter-up-delayed,
+  .sn-auth-enter,
+  .sn-float-1, .sn-float-2, .sn-float-3,
+  .sn-orb-1, .sn-orb-2, .sn-orb-3 {
+    animation: none !important;
+  }
+}

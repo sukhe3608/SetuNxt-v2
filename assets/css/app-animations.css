@@ -1,0 +1,175 @@
+/* =========================================================
+   SETUNXT — APP-WIDE MICRO-ANIMATIONS
+   Enhances bootstrap pages: dashboard, agents, templates
+   ========================================================= */
+
+/* ── Global Button Polish ──────────────────────────────── */
+.btn {
+  transition: all 0.25s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
+  position: relative;
+  overflow: hidden;
+}
+.btn:hover {
+  transform: translateY(-2px);
+}
+.btn:active {
+  transform: translateY(0);
+}
+
+/* Shine sweep on primary buttons */
+.btn-primary::after,
+.btn-outline-primary::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  transform: translateX(-120%);
+  transition: transform 0.5s ease;
+  pointer-events: none;
+}
+.btn-primary:hover::after,
+.btn-outline-primary:hover::after {
+  transform: translateX(120%);
+}
+
+/* ── Card Enhancements ──────────────────────────────────── */
+.card {
+  transition: box-shadow 0.28s ease, transform 0.28s ease !important;
+}
+.card:hover {
+  box-shadow: 0 8px 32px rgba(26,111,212,0.1), 0 2px 8px rgba(0,0,0,0.05) !important;
+  transform: translateY(-3px);
+}
+/* Prevent hover lift on static/non-interactive cards */
+.card.no-hover:hover {
+  transform: none !important;
+  box-shadow: inherit !important;
+}
+
+/* ── Input / Form Focus ─────────────────────────────────── */
+.form-control:focus,
+.form-select:focus {
+  border-color: rgba(26,111,212,0.4) !important;
+  box-shadow: 0 0 0 3px rgba(26,111,212,0.1) !important;
+  transition: all 0.22s ease !important;
+}
+
+/* ── Badge Micro-animations ─────────────────────────────── */
+.badge {
+  transition: transform 0.2s ease !important;
+}
+.badge:hover {
+  transform: scale(1.07) !important;
+}
+
+/* ── Table Row Highlight ────────────────────────────────── */
+.table tbody tr {
+  transition: background-color 0.18s ease !important;
+}
+.table tbody tr:hover {
+  background-color: rgba(26,111,212,0.04) !important;
+}
+
+/* ── Stat Cards Entrance ────────────────────────────────── */
+.sn-stat-card {
+  animation: sn-cardPop 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+.sn-stat-card:nth-child(2) { animation-delay: 0.1s; }
+.sn-stat-card:nth-child(3) { animation-delay: 0.2s; }
+.sn-stat-card:nth-child(4) { animation-delay: 0.3s; }
+
+/* ── Page Load Fade ─────────────────────────────────────── */
+main.main-content {
+  animation: sn-fadeInUp 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* ── Dropdown Animation ─────────────────────────────────── */
+.dropdown-menu {
+  animation: sn-scaleIn 0.2s cubic-bezier(0.34, 1.56, 0.64, 1) both !important;
+  transform-origin: top;
+}
+
+/* ── Progress Bar Shimmer ───────────────────────────────── */
+.progress-bar {
+  position: relative;
+  overflow: hidden;
+}
+.progress-bar::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+  transform: translateX(-100%);
+  animation: sn-shimmer 2s linear infinite;
+}
+
+/* ── Nav Item Hover ─────────────────────────────────────── */
+.nav-link {
+  transition: color 0.2s ease, background-color 0.2s ease !important;
+}
+
+/* ── App Header ─────────────────────────────────────────── */
+.app-header {
+  transition: box-shadow 0.28s ease !important;
+}
+
+/* ── Sidebar Nav Items ──────────────────────────────────── */
+.sidebar .nav-item a,
+.sidebar .nav-link {
+  transition: all 0.22s ease !important;
+  border-left: 3px solid transparent;
+}
+.sidebar .nav-link.active,
+.sidebar .nav-item a.active {
+  border-left-color: var(--bs-primary, #1a6fd4) !important;
+  background: rgba(26,111,212,0.07) !important;
+}
+.sidebar .nav-link:hover,
+.sidebar .nav-item a:hover {
+  border-left-color: rgba(26,111,212,0.4) !important;
+  background: rgba(26,111,212,0.04) !important;
+  padding-left: calc(var(--padding-base, 1rem) + 4px) !important;
+}
+
+/* ── Tooltip fade ───────────────────────────────────────── */
+.tooltip {
+  animation: sn-fadeInUp 0.2s ease both;
+}
+
+/* ── KPI Metric value ───────────────────────────────────── */
+.metric-value, .stat-value, h3.fw-bold, h4.fw-bold {
+  font-variant-numeric: tabular-nums;
+}
+
+/* ── Alert slide in ─────────────────────────────────────── */
+.alert {
+  animation: sn-fadeInDown 0.35s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* ── Modal pop ──────────────────────────────────────────── */
+.modal.show .modal-dialog {
+  animation: sn-scaleIn 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+
+/* ── Spinner (custom) ───────────────────────────────────── */
+@keyframes sn-cardPop {
+  0%   { opacity: 0; transform: translateY(28px) scale(0.96); }
+  70%  { transform: translateY(-3px) scale(1.01); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+@keyframes sn-scaleIn {
+  from { opacity: 0; transform: scale(0.88); }
+  to   { opacity: 1; transform: scale(1); }
+}
+@keyframes sn-fadeInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes sn-fadeInUp {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes sn-shimmer {
+  0%   { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
