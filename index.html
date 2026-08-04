@@ -291,18 +291,38 @@
 
                   <!-- Ad 1: E-Commerce Sale -->
                   <div class="ad-slide active">
-                    <div class="chat-bubble">
-                      <div class="chat-image"><svg class="icon" width="48" height="48">
-                          <use href="#icon-shopping-bag" />
-                        </svg></div>
-                      <p><strong>Exclusive Sale — 40% Off!</strong><br />Your cart is waiting. Grab these picks before
-                        they're gone.</p>
-                      <div class="chat-actions">
-                        <button class="chat-btn">Shop Now</button>
-                        <button class="chat-btn orange">View Offer</button>
+                    <article class="ad-card">
+                      <div class="ad-media ad-media-sale">
+                        <span class="ad-badge">Ad</span>
+                        <button class="ad-dismiss" aria-label="Dismiss">✕</button>
+                        <div class="ad-art">
+                          <span class="ad-art-shape s1"></span>
+                          <span class="ad-art-shape s2"></span>
+                          <span class="ad-art-shape s3"></span>
+                          <span class="ad-art-fig"><svg class="icon" width="44" height="44"><use href="#icon-shopping-bag" /></svg></span>
+                          <span class="ad-sale-tag">-40%</span>
+                          <span class="ad-sale-pill">MEGA SALE</span>
+                        </div>
                       </div>
-                    </div>
-                    <div class="chat-bubble"
+                      <div class="ad-body">
+                        <div class="ad-brand">
+                          <span class="ad-logo" style="background:linear-gradient(135deg,#ff7a18,#f0305f);">S</span>
+                          <div class="ad-brand-meta">
+                            <strong>ShopKart <svg class="icon" width="11" height="11" viewBox="0 0 24 24">
+                                <use href="#icon-check" />
+                              </svg></strong>
+                            <span>Sponsored · ShopKart India</span>
+                          </div>
+                        </div>
+                        <h5 class="ad-headline">Exclusive Sale — 40% Off!</h5>
+                        <p class="ad-desc">Your cart is waiting. Grab these picks before they're gone.</p>
+                        <div class="ad-actions">
+                          <button class="chat-btn">Shop Now</button>
+                          <button class="chat-btn orange">View Offer</button>
+                        </div>
+                      </div>
+                    </article>
+                    <div class="chat-bubble ad-reply"
                       style="margin-left:auto;background:#e8f5e9;border-radius:14px 14px 4px 14px;">
                       <p style="font-size:0.78rem;color:#2e7d32;"><span class="inline-icon"><svg class="icon" width="14"
                             height="14">
@@ -313,45 +333,83 @@
 
                   <!-- Ad 2: Banking Alert -->
                   <div class="ad-slide">
-                    <div class="chat-bubble">
-                      <div class="chat-image" style="background:linear-gradient(135deg,#e0eaff,#c7d9ff);">
-                        <svg class="icon" width="48" height="48">
-                          <use href="#icon-land-bank" />
-                        </svg>
+                    <article class="ad-card">
+                      <div class="ad-media ad-media-bank">
+                        <span class="ad-badge">Ad</span>
+                        <button class="ad-dismiss" aria-label="Dismiss">✕</button>
+                        <div class="ad-art">
+                          <span class="ad-art-shape s1"></span>
+                          <span class="ad-art-shape s2"></span>
+                          <span class="ad-art-shape s3"></span>
+                          <div class="ad-card-visual">
+                            <span class="ad-card-chip"></span>
+                            <span class="ad-card-num">•••• •••• •••• 4829</span>
+                            <span class="ad-card-meta">DEBIT · ₹5,000.00</span>
+                          </div>
+                          <span class="ad-bank-secure"><svg class="icon" width="16" height="16"><use href="#icon-lock" /></svg></span>
+                        </div>
                       </div>
-                      <p><strong>Transaction Alert</strong><br />₹5,000 debited from your account. OTP:
-                        <strong>482916</strong>. Valid for 5 mins.
-                      </p>
-                      <div class="chat-actions">
-                        <button class="chat-btn">View Details</button>
-                        <button class="chat-btn orange">Report Fraud</button>
+                      <div class="ad-body">
+                        <div class="ad-brand">
+                          <span class="ad-logo" style="background:linear-gradient(135deg,#2f6fed,#1552c7);"><svg class="icon" width="14" height="14"><use href="#icon-land-bank" /></svg></span>
+                          <div class="ad-brand-meta">
+                            <strong>StateBank <svg class="icon" width="11" height="11" viewBox="0 0 24 24">
+                                <use href="#icon-check" />
+                              </svg></strong>
+                            <span>Transactional Alert</span>
+                          </div>
+                        </div>
+                        <h5 class="ad-headline">Transaction Alert — ₹5,000 debited</h5>
+                        <p class="ad-desc">OTP: <strong>482916</strong> · Valid for 5 mins. Never share your OTP.</p>
+                        <div class="ad-actions">
+                          <button class="chat-btn">View Details</button>
+                          <button class="chat-btn orange">Report Fraud</button>
+                        </div>
                       </div>
-                    </div>
-                    <div class="chat-bubble"
+                    </article>
+                    <div class="chat-bubble ad-reply"
                       style="margin-left:auto;background:#fff3e0;border-radius:14px 14px 4px 14px;">
                       <p style="font-size:0.78rem;color:#e65100;"><span class="inline-icon"><svg class="icon" width="14"
                             height="14">
                             <use href="#icon-lock" />
-                          </svg></span> Verified & Secure message.</p>
+                          </svg></span> Verified &amp; secure message.</p>
                     </div>
                   </div>
 
                   <!-- Ad 3: Healthcare Reminder -->
                   <div class="ad-slide">
-                    <div class="chat-bubble">
-                      <div class="chat-image" style="background:linear-gradient(135deg,#d4f5e9,#a7ecd0);">
-                        <svg class="icon" width="48" height="48">
-                          <use href="#icon-hospital" />
-                        </svg>
+                    <article class="ad-card">
+                      <div class="ad-media ad-media-health">
+                        <span class="ad-badge">Ad</span>
+                        <button class="ad-dismiss" aria-label="Dismiss">✕</button>
+                        <div class="ad-art">
+                          <span class="ad-art-shape s1"></span>
+                          <span class="ad-art-shape s2"></span>
+                          <span class="ad-art-shape s3"></span>
+                          <span class="ad-art-fig"><svg class="icon" width="44" height="44"><use href="#icon-hospital" /></svg></span>
+                          <span class="ad-health-pill">Tomorrow · 10:30 AM</span>
+                          <span class="ad-health-cross">+</span>
+                        </div>
                       </div>
-                      <p><strong>Appointment Tomorrow!</strong><br />Dr. Sharma at City Clinic, 10:30 AM. Please confirm
-                        your slot.</p>
-                      <div class="chat-actions">
-                        <button class="chat-btn" style="background:#10b981;">✓ Confirm</button>
-                        <button class="chat-btn orange">Reschedule</button>
+                      <div class="ad-body">
+                        <div class="ad-brand">
+                          <span class="ad-logo" style="background:linear-gradient(135deg,#16c79a,#0aa47c);">+</span>
+                          <div class="ad-brand-meta">
+                            <strong>City Clinic <svg class="icon" width="11" height="11" viewBox="0 0 24 24">
+                                <use href="#icon-check" />
+                              </svg></strong>
+                            <span>Healthcare · Dr. Sharma</span>
+                          </div>
+                        </div>
+                        <h5 class="ad-headline">Appointment Tomorrow!</h5>
+                        <p class="ad-desc">Dr. Sharma, City Clinic at 10:30 AM. Please confirm your slot.</p>
+                        <div class="ad-actions">
+                          <button class="chat-btn" style="background:#10b981;"><span class="inline-icon"><svg class="icon" width="13" height="13"><use href="#icon-check" /></svg></span>Confirm</button>
+                          <button class="chat-btn orange">Reschedule</button>
+                        </div>
                       </div>
-                    </div>
-                    <div class="chat-bubble"
+                    </article>
+                    <div class="chat-bubble ad-reply"
                       style="margin-left:auto;background:#e8f5e9;border-radius:14px 14px 4px 14px;">
                       <p style="font-size:0.78rem;color:#2e7d32;"><span class="inline-icon"><svg class="icon" width="14"
                             height="14">
@@ -362,20 +420,38 @@
 
                   <!-- Ad 4: Travel Update -->
                   <div class="ad-slide">
-                    <div class="chat-bubble">
-                      <div class="chat-image" style="background:linear-gradient(135deg,#ffecd2,#fcb69f);">
-                        <svg class="icon" width="48" height="48">
-                          <use href="#icon-airplane" />
-                        </svg>
+                    <article class="ad-card">
+                      <div class="ad-media ad-media-travel">
+                        <span class="ad-badge">Ad</span>
+                        <button class="ad-dismiss" aria-label="Dismiss">✕</button>
+                        <div class="ad-art">
+                          <span class="ad-art-shape s1"></span>
+                          <span class="ad-art-shape s2"></span>
+                          <span class="ad-art-shape s3"></span>
+                          <span class="ad-art-fig"><svg class="icon" width="44" height="44"><use href="#icon-airplane" /></svg></span>
+                          <span class="ad-flight-chip"><b>AI-204</b> On Time</span>
+                          <span class="ad-gate-chip">Gate 12B</span>
+                        </div>
                       </div>
-                      <p><strong>Flight AI-204 On Time ✈</strong><br />Boarding at Gate 12B. Departure: 14:35. Check-in
-                        closes in 45 mins.</p>
-                      <div class="chat-actions">
-                        <button class="chat-btn orange">Boarding Pass</button>
-                        <button class="chat-btn">Track Flight</button>
+                      <div class="ad-body">
+                        <div class="ad-brand">
+                          <span class="ad-logo" style="background:linear-gradient(135deg,#f7971e,#ff5e62);"><svg class="icon" width="14" height="14"><use href="#icon-airplane" /></svg></span>
+                          <div class="ad-brand-meta">
+                            <strong>SkyWings Air <svg class="icon" width="11" height="11" viewBox="0 0 24 24">
+                                <use href="#icon-check" />
+                              </svg></strong>
+                            <span>Travel · Flight Update</span>
+                          </div>
+                        </div>
+                        <h5 class="ad-headline">Flight AI-204 On Time</h5>
+                        <p class="ad-desc">Boarding Gate 12B · Departs 14:35. Check-in closes in 45 mins.</p>
+                        <div class="ad-actions">
+                          <button class="chat-btn orange">Boarding Pass</button>
+                          <button class="chat-btn">Track Flight</button>
+                        </div>
                       </div>
-                    </div>
-                    <div class="chat-bubble"
+                    </article>
+                    <div class="chat-bubble ad-reply"
                       style="margin-left:auto;background:#fff3e0;border-radius:14px 14px 4px 14px;">
                       <p style="font-size:0.78rem;color:#f07c1a;"><span class="inline-icon"><svg class="icon" width="14"
                             height="14">

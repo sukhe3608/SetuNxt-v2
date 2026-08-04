@@ -54,7 +54,7 @@
 
     <!-- Main Content -->
     <main class="main-content" id="mainContent">
-        <div class="container-fluid px-3 py-4 h-100 d-flex flex-column" style="min-height: calc(100vh - 70px);">
+        <div class="container-fluid px-3 py-4 h-100 d-flex flex-column" style="height: calc(100vh - 64px);">
 
             <div class="chat-container-wrapper flex-grow-1 d-flex bg-white rounded shadow-sm border overflow-hidden">
                 <div class="chat-sidebar">
@@ -93,6 +93,10 @@
                 </div>
                 <div class="chat-main">
                     <div class="chat-main-header">
+                        <!-- Mobile back button -->
+                        <button class="btn btn-icon d-lg-none" id="chatBackBtn" title="Back to chats" aria-label="Back to chats">
+                            <i class="fas fa-arrow-left"></i>
+                        </button>
                         <!-- Header info populated by JS -->
                         <div class="contact-avatar bg-primary text-white d-none" id="currentContactAvatar">JS</div>
                         <div class="header-info ms-3 d-none" id="currentContactInfo">
@@ -125,8 +129,7 @@
                     </div>
                     <div class="chat-input-area position-relative d-none bg-white" id="chatInputArea">
                         <!-- Emoji Picker (hidden by default) -->
-                        <emoji-picker class="d-none" id="emojiPicker"
-                            style="position: absolute; bottom: 100%; left: 10px; z-index: 100;"></emoji-picker>
+                        <emoji-picker class="d-none" id="emojiPicker"></emoji-picker>
 
                         <button class="btn btn-icon" id="chatSmileBtn"><i
                                 class="far fa-smile text-secondary fs-5"></i></button>

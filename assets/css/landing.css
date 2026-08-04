@@ -1310,9 +1310,349 @@ footer {
 /* ══ AD CAROUSEL ══ */
 .ad-carousel {
   position: relative;
-  min-height: 220px;
+  min-height: 312px;
   overflow: hidden;
   border-radius: 8px;
+}
+
+/* Realistic rich-media ad card */
+.ad-card {
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid #eef1f6;
+  box-shadow: 0 4px 16px rgba(13, 27, 46, 0.1), 0 1px 3px rgba(13, 27, 46, 0.06);
+  margin-bottom: 10px;
+}
+
+/* Media banner */
+.ad-media {
+  position: relative;
+  height: 96px;
+  overflow: hidden;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.12);
+}
+
+.ad-media-sale { background: linear-gradient(135deg, #ff5f3c, #f0305f); }
+.ad-media-bank { background: linear-gradient(135deg, #3d7bfd, #1645c0); }
+.ad-media-health { background: linear-gradient(135deg, #20cf9d, #0aa47c); }
+.ad-media-travel { background: linear-gradient(135deg, #f9a825, #ff5e62); }
+
+.ad-badge {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: rgba(0, 0, 0, 0.42);
+  color: #fff;
+  font-size: 0.56rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  padding: 2px 7px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  z-index: 4;
+  backdrop-filter: blur(4px);
+}
+
+.ad-dismiss {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 21px;
+  height: 21px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.35);
+  color: #fff;
+  font-size: 0.62rem;
+  line-height: 1;
+  cursor: pointer;
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(4px);
+}
+
+/* Banner artwork */
+.ad-art {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ad-art-fig {
+  font-size: 2.5rem;
+  line-height: 1;
+  position: relative;
+  z-index: 2;
+  filter: drop-shadow(0 6px 10px rgba(0, 0, 0, 0.2));
+  transform: translateX(-16px);
+}
+
+.ad-art-fig svg.icon {
+  color: #fff;
+  width: 44px;
+  height: 44px;
+  stroke-width: 1.5;
+}
+
+.ad-art-shape {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.ad-art-shape.s1 { width: 110px; height: 110px; background: rgba(255, 255, 255, 0.12); top: -36px; right: -22px; }
+.ad-art-shape.s2 { width: 72px; height: 72px; background: rgba(255, 255, 255, 0.1); bottom: -28px; left: 18px; }
+.ad-art-shape.s3 { width: 34px; height: 34px; background: rgba(255, 255, 255, 0.16); top: 12px; left: 26px; }
+
+/* Sale (E-Commerce) chips */
+.ad-sale-tag {
+  position: absolute;
+  z-index: 3;
+  top: 10px;
+  right: 12px;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: #fff;
+  color: #e53935;
+  font-weight: 800;
+  font-size: 0.74rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+}
+
+.ad-sale-pill {
+  position: absolute;
+  z-index: 2;
+  bottom: 12px;
+  left: 12px;
+  background: rgba(0, 0, 0, 0.32);
+  color: #fff;
+  font-weight: 800;
+  font-size: 0.6rem;
+  letter-spacing: 0.16em;
+  padding: 5px 10px;
+  border-radius: 6px;
+  backdrop-filter: blur(4px);
+}
+
+/* Banking card visual */
+.ad-card-visual {
+  position: relative;
+  z-index: 2;
+  width: 74%;
+  max-width: 196px;
+  background: linear-gradient(135deg, #ffffff, #e6eeff);
+  border-radius: 10px;
+  padding: 10px 12px;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  transform: rotate(-4deg);
+}
+
+.ad-card-chip {
+  width: 18px;
+  height: 13px;
+  border-radius: 3px;
+  background: linear-gradient(135deg, #f6c344, #d99a1b);
+}
+
+.ad-card-num {
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #1a2b4a;
+}
+
+.ad-card-meta {
+  font-size: 0.54rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  color: #1552c7;
+}
+
+.ad-bank-secure {
+  position: absolute;
+  z-index: 2;
+  bottom: 10px;
+  right: 14px;
+  color: #fff;
+  font-size: 1rem;
+  filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.3));
+}
+
+.ad-bank-secure .icon {
+  width: 16px;
+  height: 16px;
+  stroke-width: 1.5;
+}
+
+/* Healthcare chips */
+.ad-health-pill {
+  position: absolute;
+  z-index: 2;
+  bottom: 12px;
+  left: 12px;
+  background: #fff;
+  color: #0aa47c;
+  font-weight: 700;
+  font-size: 0.6rem;
+  padding: 5px 10px;
+  border-radius: 20px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.ad-health-cross {
+  position: absolute;
+  z-index: 2;
+  bottom: 11px;
+  right: 14px;
+  width: 26px;
+  height: 26px;
+  background: rgba(255, 255, 255, 0.28);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Travel chips */
+.ad-flight-chip {
+  position: absolute;
+  z-index: 2;
+  bottom: 12px;
+  left: 12px;
+  background: rgba(255, 255, 255, 0.94);
+  color: #1a2b4a;
+  font-size: 0.58rem;
+  font-weight: 600;
+  padding: 4px 9px;
+  border-radius: 20px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.ad-flight-chip b { color: #ff5e62; }
+
+.ad-gate-chip {
+  position: absolute;
+  z-index: 2;
+  bottom: 12px;
+  right: 12px;
+  background: rgba(0, 0, 0, 0.35);
+  color: #fff;
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  padding: 5px 10px;
+  border-radius: 6px;
+  backdrop-filter: blur(4px);
+}
+
+/* Card body */
+.ad-body {
+  padding: 11px 12px 12px;
+}
+
+.ad-brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.ad-logo {
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: 800;
+  font-size: 0.72rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  flex-shrink: 0;
+}
+
+.ad-logo .icon {
+  color: #fff;
+  width: 14px;
+  height: 14px;
+  stroke-width: 1.5;
+}
+
+.ad-brand-meta {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15;
+  min-width: 0;
+}
+
+.ad-brand-meta strong {
+  font-size: 0.7rem;
+  color: var(--text-dark);
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  white-space: nowrap;
+}
+
+.ad-brand-meta strong .icon { stroke: #2e7d32; fill: none; }
+
+.ad-brand-meta span {
+  font-size: 0.6rem;
+  color: var(--text-light);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ad-headline {
+  font-size: 0.82rem;
+  font-weight: 800;
+  color: var(--text-dark);
+  margin: 0 0 2px;
+}
+
+.ad-desc {
+  font-size: 0.7rem;
+  color: var(--text-mid);
+  line-height: 1.45;
+  margin: 0 0 8px;
+}
+
+.ad-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+}
+
+.ad-actions .chat-btn {
+  font-size: 0.68rem;
+  padding: 6px 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* In-thread confirmation reply */
+.ad-reply {
+  margin-bottom: 0;
 }
 
 .ad-slide {
