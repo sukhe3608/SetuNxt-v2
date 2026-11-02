@@ -24,6 +24,8 @@
   <link rel="stylesheet" href="assets/css/animations.css" />
   <link rel="stylesheet" href="assets/css/landing-enhanced.css" />
   <link rel="stylesheet" href="assets/css/animations-v2.css" />
+  <!-- Isolated realistic phone design: no changes to existing layout logic -->
+  <link rel="stylesheet" href="assets/css/phone-realistic.css" />
 
 </head>
 
@@ -215,9 +217,11 @@
           <div class="dot"></div>
           Next-Gen Business Communication
         </div>
-        <h1 class="sn-hero-enter-up-delayed">Bridge Every<br /><span class="accent">Customer</span> With<br /><span class="accent-orange">Smart</span>
+        <h1 class="sn-hero-enter-up-delayed">Bridge Every<br /><span class="accent">Customer</span> With<br /><span
+            class="accent-orange">Smart</span>
           Channels</h1>
-        <p class="hero-sub sn-hero-enter-up" style="animation-delay:0.4s">SetuNxt empowers businesses to engage customers through <strong>RCS, Email &amp;
+        <p class="hero-sub sn-hero-enter-up" style="animation-delay:0.4s">SetuNxt empowers businesses to engage
+          customers through <strong>RCS, Email &amp;
             WhatsApp</strong> — delivering rich, interactive, and personalized communications at scale.</p>
         <div class="hero-actions sn-hero-enter-up" style="animation-delay:0.55s">
           <a href="login.html" class="btn-hero-primary sn-btn-shine">Log in →</a>
@@ -232,84 +236,78 @@
             </svg></div>
           98% Delivery Rate
         </div>
-        <!-- Realistic Phone Frame -->
-        <div class="phone-realistic-frame">
-          <!-- Left side buttons -->
-          <div class="prf-btn prf-vol-up"></div>
-          <div class="prf-btn prf-vol-down"></div>
-          <!-- Right side button -->
-          <div class="prf-btn prf-power"></div>
-
-          <!-- Screen -->
+        <!-- REFINED PIXEL-STYLE RCS PHONE: presentation only. Carousel JS selectors are unchanged. -->
+        <div class="phone-realistic-frame" aria-label="Interactive illustration of RCS business messages">
+          <div class="prf-btn prf-vol-up" aria-hidden="true"></div>
+          <div class="prf-btn prf-vol-down" aria-hidden="true"></div>
+          <div class="prf-btn prf-power" aria-hidden="true"></div>
           <div class="prf-screen">
-            <!-- Status Bar -->
-            <div class="prf-status-bar">
+            <div class="prf-status-bar" aria-hidden="true">
               <span class="prf-time">9:41</span>
               <div class="prf-status-icons">
-                <svg width="17" height="12" viewBox="0 0 17 12" fill="white" xmlns="http://www.w3.org/2000/svg">
-                  <rect x="0" y="7" width="3" height="5" rx="0.6" opacity="0.4" />
-                  <rect x="4.5" y="4.5" width="3" height="7.5" rx="0.6" opacity="0.6" />
-                  <rect x="9" y="2" width="3" height="10" rx="0.6" opacity="0.8" />
-                  <rect x="13.5" y="0" width="3" height="12" rx="0.6" />
+                <svg width="17" height="13" viewBox="0 0 17 13" fill="none">
+                  <path d="M1 11.5h2.8V8.3H1zM5.1 11.5h2.8V5.8H5.1zM9.2 11.5H12V3.2H9.2zM13.3 11.5H16V.8h-2.7z"
+                    fill="currentColor" />
                 </svg>
-                <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="8" cy="10.5" r="1" fill="white" />
-                  <path d="M5.5 7.8C6.2 7.1 7.1 6.6 8 6.6s1.8.5 2.5 1.2" stroke="white" stroke-width="1.4"
-                    stroke-linecap="round" fill="none" />
-                  <path d="M3 5.2C4.3 3.8 6 3 8 3s3.7.8 5 2.2" stroke="white" stroke-width="1.4" stroke-linecap="round"
-                    fill="none" opacity="0.7" />
+                <svg width="16" height="13" viewBox="0 0 16 13" fill="none">
+                  <path d="M1 4.4c3.8-3.3 10.2-3.3 14 0M3.8 7.5c2.4-2.2 6-2.2 8.4 0" stroke="currentColor"
+                    stroke-width="1.55" stroke-linecap="round" />
+                  <circle cx="8" cy="10.3" r="1.55" fill="currentColor" />
                 </svg>
-                <svg width="27" height="12" viewBox="0 0 27 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect x="0.5" y="0.5" width="22" height="11" rx="3.5" stroke="white" stroke-opacity="0.5" />
-                  <rect x="2" y="2" width="17" height="8" rx="2" fill="white" />
-                  <path d="M24.5 4v4a2 2 0 000-4z" fill="white" fill-opacity="0.55" />
+                <svg width="24" height="13" viewBox="0 0 24 13" fill="none">
+                  <rect x=".8" y="1.1" width="19.5" height="10.7" rx="3.2" stroke="currentColor" stroke-width="1.2" />
+                  <rect x="2.7" y="3" width="15" height="6.9" rx="1.55" fill="currentColor" />
+                  <path d="M22 4.5v3.7c1.4-.5 1.4-3.2 0-3.7" fill="currentColor" />
                 </svg>
               </div>
             </div>
-
-            <!-- Dynamic Island -->
-            <div class="prf-island">
+            <div class="prf-island" aria-hidden="true">
               <div class="prf-island-cam"></div>
             </div>
-
-            <!-- Original phone content -->
-            <div class="hero-phone-mockup">
+            <div class="hero-phone-mockup" data-chat-index="0">
               <div class="phone-header">
-                <div class="phone-header-top">
-                  <div class="phone-avatar"><img src="assets/images/logo.png" alt="SetuNXT"></div>
-                  <div>
-                    <h4>SetuNXT</h4>
-                    <p>Business Account</p>
-                  </div>
+                <span class="prf-back" aria-hidden="true"><svg viewBox="0 0 24 24" width="19" height="19" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m15 18-6-6 6-6" />
+                  </svg></span>
+                <span class="phone-avatar" id="prf-chat-avatar" aria-hidden="true">S</span>
+                <div class="prf-contact-info">
+                  <h4><span id="prf-chat-name">ShopKart</span><span class="prf-account-check"
+                      aria-label="Example verified business">✓</span></h4>
+                  <p id="prf-chat-subtitle">Business chat · RCS</p>
                 </div>
-                <div class="verified-badge"><span class="inline-icon"><svg class="icon" width="12" height="12">
-                      <use href="#icon-check" />
-                    </svg></span> Verified Business</div>
+                <span class="prf-header-call" aria-hidden="true"><svg viewBox="0 0 24 24" width="17" height="17"
+                    fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                      d="m22 16.92-3.09-1.34a2 2 0 0 0-2.23.45l-1.08 1.08a16.5 16.5 0 0 1-8.71-8.71l1.08-1.08a2 2 0 0 0 .45-2.23L7.08 2a2 2 0 0 0-2.1-1.18L3 1.1A2 2 0 0 0 1.2 3.2 20.8 20.8 0 0 0 20.8 22.8 2 2 0 0 0 22.9 21l.28-1.98A2 2 0 0 0 22 16.92Z" />
+                  </svg></span>
+                <span class="prf-header-more" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24"
+                    fill="currentColor">
+                    <circle cx="12" cy="5" r="1.6" />
+                    <circle cx="12" cy="12" r="1.6" />
+                    <circle cx="12" cy="19" r="1.6" />
+                  </svg></span>
               </div>
               <div class="phone-body">
-                <div class="ad-carousel" id="adCarousel">
-
-                  <!-- Ad 1: E-Commerce Sale -->
-                  <div class="ad-slide active">
+                <div class="prf-thread-day">Today <span>·</span> 9:41 AM</div>
+                <div class="ad-carousel" id="adCarousel" aria-label="Rich messaging and original sponsored ads">
+                  <div aria-label="ShopKart promotion" class="ad-slide active" data-brand="ShopKart"
+                    data-chat-color="shop" data-chat-type="Business chat · RCS" data-initial="S">
+                    <div class="prf-inbound">Hi! We have a special offer for you.</div>
                     <article class="ad-card">
-                      <div class="ad-media ad-media-sale">
-                        <span class="ad-badge">Ad</span>
-                        <button class="ad-dismiss" aria-label="Dismiss">✕</button>
-                        <div class="ad-art">
-                          <span class="ad-art-shape s1"></span>
-                          <span class="ad-art-shape s2"></span>
-                          <span class="ad-art-shape s3"></span>
-                          <span class="ad-art-fig"><svg class="icon" width="44" height="44"><use href="#icon-shopping-bag" /></svg></span>
-                          <span class="ad-sale-tag">-40%</span>
-                          <span class="ad-sale-pill">MEGA SALE</span>
-                        </div>
+                      <div class="ad-media ad-media-sale"><span class="ad-badge">Ad</span><button aria-label="Dismiss"
+                          class="ad-dismiss" type="button">✕</button>
+                        <img alt="White and coral trainers in a promotional product display" class="prf-sale-photo"
+                          src="assets/images/rcs-sneaker.svg" />
+                        <span class="prf-sale-caption">MEGA SALE · LIMITED TIME</span>
+                        <span class="ad-sale-tag">-40%</span>
                       </div>
                       <div class="ad-body">
                         <div class="ad-brand">
                           <span class="ad-logo" style="background:linear-gradient(135deg,#ff7a18,#f0305f);">S</span>
                           <div class="ad-brand-meta">
-                            <strong>ShopKart <svg class="icon" width="11" height="11" viewBox="0 0 24 24">
-                                <use href="#icon-check" />
+                            <strong>ShopKart <svg class="icon" height="11" viewbox="0 0 24 24" width="11">
+                                <use href="#icon-check"></use>
                               </svg></strong>
                             <span>Sponsored · ShopKart India</span>
                           </div>
@@ -317,44 +315,40 @@
                         <h5 class="ad-headline">Exclusive Sale — 40% Off!</h5>
                         <p class="ad-desc">Your cart is waiting. Grab these picks before they're gone.</p>
                         <div class="ad-actions">
-                          <button class="chat-btn">Shop Now</button>
-                          <button class="chat-btn orange">View Offer</button>
+                          <button class="chat-btn" type="button">Shop Now</button>
+                          <button class="chat-btn orange" type="button">View Offer</button>
                         </div>
                       </div>
                     </article>
-                    <div class="chat-bubble ad-reply"
-                      style="margin-left:auto;background:#e8f5e9;border-radius:14px 14px 4px 14px;">
-                      <p style="font-size:0.78rem;color:#2e7d32;"><span class="inline-icon"><svg class="icon" width="14"
-                            height="14">
-                            <use href="#icon-check" />
-                          </svg></span> Order placed! Track it here.</p>
+                    <div class="prf-message-time">9:41 AM · RCS</div>
+                    <div class="chat-bubble ad-reply">
+                      <p> Order placed! Track it here.</p>
+                      <span aria-label="Message delivered" class="prf-checks">✓✓</span>
                     </div>
                   </div>
-
-                  <!-- Ad 2: Banking Alert -->
-                  <div class="ad-slide">
+                  <div aria-label="StateBank transaction alert" class="ad-slide" data-brand="StateBank"
+                    data-chat-color="bank" data-chat-type="Verified business · RCS" data-initial="₹">
+                    <div class="prf-inbound">Your account activity alert is ready.</div>
                     <article class="ad-card">
-                      <div class="ad-media ad-media-bank">
-                        <span class="ad-badge">Ad</span>
-                        <button class="ad-dismiss" aria-label="Dismiss">✕</button>
-                        <div class="ad-art">
-                          <span class="ad-art-shape s1"></span>
-                          <span class="ad-art-shape s2"></span>
-                          <span class="ad-art-shape s3"></span>
-                          <div class="ad-card-visual">
-                            <span class="ad-card-chip"></span>
-                            <span class="ad-card-num">•••• •••• •••• 4829</span>
-                            <span class="ad-card-meta">DEBIT · ₹5,000.00</span>
-                          </div>
-                          <span class="ad-bank-secure"><svg class="icon" width="16" height="16"><use href="#icon-lock" /></svg></span>
+                      <div class="ad-media ad-media-bank"><span class="ad-badge">Ad</span><button aria-label="Dismiss"
+                          class="ad-dismiss" type="button">✕</button>
+                        <div class="prf-bank-note">
+                          <div class="prf-bank-note-top"><span class="prf-bank-small">TRANSACTION ALERT</span><span
+                              class="prf-bank-lock">● SECURE</span></div>
+                          <div class="prf-bank-amount">− ₹5,000.00</div>
+                          <div class="prf-bank-detail">Debit card ending in <b>4829</b></div>
+                          <div class="prf-bank-note-bottom"><span>Today at 9:41 AM</span><span>Completed ✓</span></div>
                         </div>
                       </div>
                       <div class="ad-body">
                         <div class="ad-brand">
-                          <span class="ad-logo" style="background:linear-gradient(135deg,#2f6fed,#1552c7);"><svg class="icon" width="14" height="14"><use href="#icon-land-bank" /></svg></span>
+                          <span class="ad-logo" style="background:linear-gradient(135deg,#2f6fed,#1552c7);"><svg
+                              class="icon" height="14" width="14">
+                              <use href="#icon-land-bank"></use>
+                            </svg></span>
                           <div class="ad-brand-meta">
-                            <strong>StateBank <svg class="icon" width="11" height="11" viewBox="0 0 24 24">
-                                <use href="#icon-check" />
+                            <strong>StateBank <svg class="icon" height="11" viewbox="0 0 24 24" width="11">
+                                <use href="#icon-check"></use>
                               </svg></strong>
                             <span>Transactional Alert</span>
                           </div>
@@ -362,41 +356,35 @@
                         <h5 class="ad-headline">Transaction Alert — ₹5,000 debited</h5>
                         <p class="ad-desc">OTP: <strong>482916</strong> · Valid for 5 mins. Never share your OTP.</p>
                         <div class="ad-actions">
-                          <button class="chat-btn">View Details</button>
-                          <button class="chat-btn orange">Report Fraud</button>
+                          <button class="chat-btn" type="button">View Details</button>
+                          <button class="chat-btn orange" type="button">Report Fraud</button>
                         </div>
                       </div>
                     </article>
-                    <div class="chat-bubble ad-reply"
-                      style="margin-left:auto;background:#fff3e0;border-radius:14px 14px 4px 14px;">
-                      <p style="font-size:0.78rem;color:#e65100;"><span class="inline-icon"><svg class="icon" width="14"
-                            height="14">
-                            <use href="#icon-lock" />
-                          </svg></span> Verified &amp; secure message.</p>
+                    <div class="prf-message-time">9:41 AM · RCS</div>
+                    <div class="chat-bubble ad-reply">
+                      <p> Verified &amp; secure message.</p>
+                      <span aria-label="Message delivered" class="prf-checks">✓✓</span>
                     </div>
                   </div>
-
-                  <!-- Ad 3: Healthcare Reminder -->
-                  <div class="ad-slide">
+                  <div aria-label="City Clinic appointment reminder" class="ad-slide" data-brand="City Clinic"
+                    data-chat-color="health" data-chat-type="Appointments · RCS" data-initial="+">
+                    <div class="prf-inbound">A reminder from your clinic.</div>
                     <article class="ad-card">
-                      <div class="ad-media ad-media-health">
-                        <span class="ad-badge">Ad</span>
-                        <button class="ad-dismiss" aria-label="Dismiss">✕</button>
-                        <div class="ad-art">
-                          <span class="ad-art-shape s1"></span>
-                          <span class="ad-art-shape s2"></span>
-                          <span class="ad-art-shape s3"></span>
-                          <span class="ad-art-fig"><svg class="icon" width="44" height="44"><use href="#icon-hospital" /></svg></span>
-                          <span class="ad-health-pill">Tomorrow · 10:30 AM</span>
-                          <span class="ad-health-cross">+</span>
+                      <div class="ad-media ad-media-health"><span class="ad-badge">Ad</span><button aria-label="Dismiss"
+                          class="ad-dismiss" type="button">✕</button>
+                        <div class="prf-appointment-panel">
+                          <div class="prf-appointment-date"><span>OCT</span><strong>30</strong><small>FRI</small></div>
+                          <div class="prf-appointment-details"><span>UPCOMING APPOINTMENT</span><strong>Dr.
+                              Sharma</strong><small>General consultation</small><em>10:30 AM – 11:00 AM</em></div>
                         </div>
                       </div>
                       <div class="ad-body">
                         <div class="ad-brand">
                           <span class="ad-logo" style="background:linear-gradient(135deg,#16c79a,#0aa47c);">+</span>
                           <div class="ad-brand-meta">
-                            <strong>City Clinic <svg class="icon" width="11" height="11" viewBox="0 0 24 24">
-                                <use href="#icon-check" />
+                            <strong>City Clinic <svg class="icon" height="11" viewbox="0 0 24 24" width="11">
+                                <use href="#icon-check"></use>
                               </svg></strong>
                             <span>Healthcare · Dr. Sharma</span>
                           </div>
@@ -404,41 +392,50 @@
                         <h5 class="ad-headline">Appointment Tomorrow!</h5>
                         <p class="ad-desc">Dr. Sharma, City Clinic at 10:30 AM. Please confirm your slot.</p>
                         <div class="ad-actions">
-                          <button class="chat-btn" style="background:#10b981;"><span class="inline-icon"><svg class="icon" width="13" height="13"><use href="#icon-check" /></svg></span>Confirm</button>
-                          <button class="chat-btn orange">Reschedule</button>
+                          <button class="chat-btn" type="button"><span class="inline-icon"><svg class="icon" height="13"
+                                width="13">
+                                <use href="#icon-check"></use>
+                              </svg></span>Confirm</button>
+                          <button class="chat-btn orange" type="button">Reschedule</button>
                         </div>
                       </div>
                     </article>
-                    <div class="chat-bubble ad-reply"
-                      style="margin-left:auto;background:#e8f5e9;border-radius:14px 14px 4px 14px;">
-                      <p style="font-size:0.78rem;color:#2e7d32;"><span class="inline-icon"><svg class="icon" width="14"
-                            height="14">
-                            <use href="#icon-check" />
-                          </svg></span> Appointment confirmed!</p>
+                    <div class="prf-message-time">9:41 AM · RCS</div>
+                    <div class="chat-bubble ad-reply">
+                      <p> Appointment confirmed!</p>
+                      <span aria-label="Message delivered" class="prf-checks">✓✓</span>
                     </div>
                   </div>
-
-                  <!-- Ad 4: Travel Update -->
-                  <div class="ad-slide">
+                  <div aria-label="SkyWings Air flight alert" class="ad-slide" data-brand="SkyWings Air"
+                    data-chat-color="travel" data-chat-type="Flight updates · RCS" data-initial="✈">
+                    <div class="prf-inbound">Your flight status has been updated.</div>
                     <article class="ad-card">
-                      <div class="ad-media ad-media-travel">
-                        <span class="ad-badge">Ad</span>
-                        <button class="ad-dismiss" aria-label="Dismiss">✕</button>
-                        <div class="ad-art">
-                          <span class="ad-art-shape s1"></span>
-                          <span class="ad-art-shape s2"></span>
-                          <span class="ad-art-shape s3"></span>
-                          <span class="ad-art-fig"><svg class="icon" width="44" height="44"><use href="#icon-airplane" /></svg></span>
-                          <span class="ad-flight-chip"><b>AI-204</b> On Time</span>
-                          <span class="ad-gate-chip">Gate 12B</span>
+                      <div class="ad-media ad-media-travel"><span class="ad-badge">Ad</span><button aria-label="Dismiss"
+                          class="ad-dismiss" type="button">✕</button>
+                        <div class="prf-flight-ticket">
+                          <div class="prf-flight-ticket-top"><span>SKYWINGS <b>✈</b></span><span class="prf-on-time">●
+                              ON TIME</span></div>
+                          <div class="prf-flight-route">
+                            <div><strong>DEL</strong><small>Delhi</small></div>
+                            <div class="prf-flight-connector"><span>AI 204</span><i>✈</i>
+                              <div></div>
+                            </div>
+                            <div><strong>BOM</strong><small>Mumbai</small></div>
+                          </div>
+                          <div class="prf-flight-bottom">
+                            <span><small>BOARDING</small>13:55</span><span><small>DEPARTURE</small>14:35</span><span><small>GATE</small>12B</span>
+                          </div>
                         </div>
                       </div>
                       <div class="ad-body">
                         <div class="ad-brand">
-                          <span class="ad-logo" style="background:linear-gradient(135deg,#f7971e,#ff5e62);"><svg class="icon" width="14" height="14"><use href="#icon-airplane" /></svg></span>
+                          <span class="ad-logo" style="background:linear-gradient(135deg,#f7971e,#ff5e62);"><svg
+                              class="icon" height="14" width="14">
+                              <use href="#icon-airplane"></use>
+                            </svg></span>
                           <div class="ad-brand-meta">
-                            <strong>SkyWings Air <svg class="icon" width="11" height="11" viewBox="0 0 24 24">
-                                <use href="#icon-check" />
+                            <strong>SkyWings Air <svg class="icon" height="11" viewbox="0 0 24 24" width="11">
+                                <use href="#icon-check"></use>
                               </svg></strong>
                             <span>Travel · Flight Update</span>
                           </div>
@@ -446,33 +443,47 @@
                         <h5 class="ad-headline">Flight AI-204 On Time</h5>
                         <p class="ad-desc">Boarding Gate 12B · Departs 14:35. Check-in closes in 45 mins.</p>
                         <div class="ad-actions">
-                          <button class="chat-btn orange">Boarding Pass</button>
-                          <button class="chat-btn">Track Flight</button>
+                          <button class="chat-btn orange" type="button">Boarding Pass</button>
+                          <button class="chat-btn" type="button">Track Flight</button>
                         </div>
                       </div>
                     </article>
-                    <div class="chat-bubble ad-reply"
-                      style="margin-left:auto;background:#fff3e0;border-radius:14px 14px 4px 14px;">
-                      <p style="font-size:0.78rem;color:#f07c1a;"><span class="inline-icon"><svg class="icon" width="14"
-                            height="14">
-                            <use href="#icon-zap" />
-                          </svg></span> Live flight updates enabled.</p>
+                    <div class="prf-message-time">9:41 AM · RCS</div>
+                    <div class="chat-bubble ad-reply">
+                      <p> Live flight updates enabled.</p>
+                      <span aria-label="Message delivered" class="prf-checks">✓✓</span>
                     </div>
                   </div>
-
                 </div>
-                <!-- Carousel Dots -->
-                <div class="ad-dots" id="adDots">
-                  <div class="ad-dot active" data-index="0"></div>
-                  <div class="ad-dot" data-index="1"></div>
-                  <div class="ad-dot" data-index="2"></div>
-                  <div class="ad-dot" data-index="3"></div>
+                <div class="ad-dots" id="adDots" aria-label="Choose message example">
+                  <button type="button" class="ad-dot active" data-index="0"
+                    aria-label="Show shopping message"></button>
+                  <button type="button" class="ad-dot" data-index="1" aria-label="Show banking message"></button>
+                  <button type="button" class="ad-dot" data-index="2" aria-label="Show healthcare message"></button>
+                  <button type="button" class="ad-dot" data-index="3" aria-label="Show travel message"></button>
                 </div>
               </div>
+              <div class="prf-action-toast" id="prf-action-toast" role="status" aria-live="polite" aria-atomic="true">
+              </div>
+              <div class="prf-composer" aria-hidden="true">
+                <span class="prf-composer-add"><svg viewBox="0 0 24 24" width="22" height="22" fill="none"
+                    stroke="currentColor" stroke-width="1.9" stroke-linecap="round">
+                    <path d="M12 5v14M5 12h14" />
+                  </svg></span>
+                <span class="prf-composer-field">RCS message <svg viewBox="0 0 24 24" width="17" height="17" fill="none"
+                    stroke="currentColor" stroke-width="1.5">
+                    <circle cx="12" cy="12" r="9" />
+                    <path d="M8 14c2 3 6 3 8 0M9 10h.01M15 10h.01" stroke-linecap="round" />
+                  </svg></span>
+                <span class="prf-composer-mic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+                    <rect x="9" y="2.5" width="6" height="13" rx="3" />
+                    <path d="M5.5 11.5a6.5 6.5 0 0 0 13 0M12 18v3.5m-4 0h8" />
+                  </svg></span>
+              </div>
             </div>
-            <!-- Home indicator -->
-            <div class="prf-home-bar"></div>
-          </div><!-- end prf-screen -->
+            <div class="prf-home-bar" aria-hidden="true"></div>
+          </div>
         </div><!-- end phone-realistic-frame -->
         <div class="hero-chip chip-2">
           <div class="chip-icon"><svg class="icon" width="24" height="24">
@@ -948,6 +959,7 @@
 ════════════════════════════════════════════ -->
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="assets/js/landing.js"></script>
+  <script src="assets/js/phone-realistic.js"></script>
   <!-- Animation engine -->
   <script src="assets/js/animations.js"></script>
   <script src="assets/js/animations-v2.js"></script>

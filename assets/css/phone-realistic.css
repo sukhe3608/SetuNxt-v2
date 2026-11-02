@@ -1,0 +1,1227 @@
+/* =========================================================
+   SETUNXT · ULTRA REALISTIC PHONE V2
+   The styling is deliberately scoped to the hero phone.
+   No changes to nav, modal, hero copy, or site functionality.
+   ========================================================= */
+.sn-landing .hero-visual .phone-realistic-frame {
+    --phone-ink: #20242b;
+    position: relative;
+    isolation: isolate;
+    box-sizing: border-box;
+    width: 326px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 7px;
+    border-radius: 49px;
+    border: 1px solid #5a5d64;
+    background: linear-gradient(125deg, #69717b 0%, #252930 4%, #0a0c0f 20%, #0b0d11 75%, #3c424b 96%, #71767d 100%);
+    box-shadow: inset 0 1px 1px rgba(255, 255, 255, .32), inset 1px 0 2px rgba(255, 255, 255, .11), 0 0 0 1px #070809, 0 0 0 3px rgba(255, 255, 255, .035), 0 24px 48px rgba(1, 9, 26, .42), 0 53px 86px rgba(0, 0, 0, .25) !important;
+    transform: none !important;
+    animation: none !important;
+}
+
+.sn-landing .hero-visual .phone-realistic-frame::before {
+    content: "";
+    position: absolute;
+    inset: 3px;
+    pointer-events: none;
+    border-radius: 46px;
+    border: 1px solid rgba(255, 255, 255, .06);
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .6);
+}
+
+.sn-landing .hero-visual .phone-realistic-frame::after {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    pointer-events: none;
+    inset: 9px;
+    border-radius: 39px;
+    box-shadow: inset 1px 0 0 rgba(255, 255, 255, .08), inset -1px 0 0 rgba(255, 255, 255, .05);
+}
+
+.sn-landing .hero-visual .prf-btn {
+    z-index: -1;
+    width: 3px;
+    border-radius: 3px;
+    border: 1px solid rgba(255, 255, 255, .14);
+    background: linear-gradient(90deg, #333a42, #101317);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, .45);
+}
+
+.sn-landing .hero-visual .prf-vol-up {
+    left: -4px;
+    top: 118px;
+    height: 30px;
+}
+
+.sn-landing .hero-visual .prf-vol-down {
+    left: -4px;
+    top: 157px;
+    height: 42px;
+}
+
+.sn-landing .hero-visual .prf-power {
+    right: -4px;
+    top: 159px;
+    height: 64px;
+}
+
+.sn-landing .hero-visual .prf-screen {
+    position: relative;
+    width: 100%;
+    height: 660px;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border-radius: 42px;
+    border: 1px solid #06090c;
+    background: #f6f7fb;
+    box-shadow: 0 0 0 1px #07090d, inset 0 1px 2px rgba(0, 0, 0, .24);
+}
+
+/* Matching the Android / RCS pattern avoids an iOS notch paired with an Android app. */
+.sn-landing .hero-visual .prf-status-bar {
+    position: relative;
+    display: flex;
+    flex: 0 0 38px;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 11px 23px 0;
+    background: #fff;
+    color: #22242b;
+    z-index: 4;
+}
+
+.sn-landing .hero-visual .prf-time {
+    font: 700 12px/15px -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    color: #22242b;
+    letter-spacing: -.03em;
+}
+
+.sn-landing .hero-visual .prf-status-icons {
+    display: flex;
+    gap: 3px;
+    align-items: center;
+    padding-top: 1px;
+    color: #22242b;
+}
+
+.sn-landing .hero-visual .prf-island {
+    position: absolute;
+    top: 11px;
+    left: 50%;
+    width: 12px;
+    height: 12px;
+    padding: 0;
+    transform: translateX(-50%);
+    background: #080b10;
+    border-radius: 50%;
+    z-index: 8;
+    border: 2px solid #20232a;
+    box-shadow: inset 0 0 1px #000, 0 0 0 1px rgba(0, 0, 0, .06);
+}
+
+.sn-landing .hero-visual .prf-island-cam {
+    width: 5px;
+    height: 5px;
+    border: 0;
+    background: radial-gradient(circle at 35% 35%, #253f65 0%, #081424 48%, #020308 85%);
+    box-shadow: inset 0 0 2px #000;
+}
+
+.sn-landing .hero-visual .hero-phone-mockup {
+    min-height: 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background: #f6f7fb;
+}
+
+.sn-landing .hero-visual .phone-header {
+    flex: 0 0 64px;
+    display: flex;
+    align-items: center;
+    min-width: 0;
+    gap: 9px;
+    margin: 0;
+    padding: 7px 11px 9px;
+    background: #fff;
+    color: #222b3a;
+    border-bottom: 1px solid #e9ecf3;
+    box-shadow: 0 1px 2px rgba(19, 29, 49, .025);
+}
+
+.sn-landing .hero-visual .prf-back,
+.sn-landing .hero-visual .prf-header-more,
+.sn-landing .hero-visual .prf-header-call {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #4a5260;
+}
+
+.sn-landing .hero-visual .prf-back {
+    margin-right: 1px;
+}
+
+.sn-landing .hero-visual .prf-header-more {
+    margin-left: 0;
+}
+
+.sn-landing .hero-visual .prf-header-call {
+    margin-left: auto;
+}
+
+.sn-landing .hero-visual .phone-avatar {
+    width: 37px;
+    height: 37px;
+    flex: 0 0 37px;
+    margin: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background: linear-gradient(140deg, #ff7b47, #f34462);
+    box-shadow: none;
+    border: 1px solid rgba(0, 0, 0, .04);
+    font: 700 16px/1 -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.sn-landing .hero-visual .hero-phone-mockup[data-chat-index="bank"] .phone-avatar {
+    background: linear-gradient(130deg, #447cda, #173f91);
+}
+
+.sn-landing .hero-visual .hero-phone-mockup[data-chat-index="health"] .phone-avatar {
+    background: linear-gradient(130deg, #28b8a5, #087a70);
+    font-size: 24px;
+}
+
+.sn-landing .hero-visual .hero-phone-mockup[data-chat-index="travel"] .phone-avatar {
+    background: linear-gradient(130deg, #385f99, #152f60);
+    font-size: 19px;
+}
+
+.sn-landing .hero-visual .prf-contact-info {
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
+.sn-landing .hero-visual .phone-header h4 {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 0;
+    color: #202329;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'DM Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: -.025em;
+    line-height: 1.35;
+    white-space: nowrap;
+}
+
+.sn-landing .hero-visual .prf-account-check {
+    flex: 0 0 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 13px;
+    height: 13px;
+    color: #fff;
+    background: #2879dd;
+    border-radius: 50%;
+    font: 700 9px/1 Arial, sans-serif;
+}
+
+.sn-landing .hero-visual .phone-header p {
+    font-size: 10px;
+    line-height: 1.3;
+    color: #828c9a;
+    opacity: 1;
+    margin: 2px 0 0;
+    white-space: nowrap;
+}
+
+.sn-landing .hero-visual .phone-body {
+    flex: 1;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 11px 12px 9px;
+    gap: 9px;
+    background: #f6f7fb;
+    overflow: hidden;
+}
+
+.sn-landing .hero-visual .prf-thread-day {
+    margin: 0 auto;
+    padding: 4px 9px;
+    border-radius: 12px;
+    flex: 0 0 auto;
+    color: #949cad;
+    background: rgba(231, 235, 244, .7);
+    font: 500 9px/1.2 -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    letter-spacing: .01em;
+}
+
+.sn-landing .hero-visual .prf-thread-day span {
+    padding: 0 2px;
+    color: #b5bcc8;
+}
+
+.sn-landing .hero-visual .ad-carousel {
+    position: relative;
+    flex: 1;
+    min-height: 0;
+    height: auto;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    border-radius: 0;
+}
+
+.sn-landing .hero-visual .ad-slide,
+.sn-landing .hero-visual .ad-slide.active {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    padding: 0 1px 4px 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+
+.sn-landing .hero-visual .ad-slide::-webkit-scrollbar {
+    display: none;
+}
+
+.sn-landing .hero-visual .ad-slide.active {
+    z-index: 2;
+}
+
+.sn-landing .hero-visual .ad-slide.leaving {
+    z-index: 3;
+    pointer-events: none;
+}
+
+.sn-landing .hero-visual .prf-inbound {
+    display: table;
+    margin: 0 15px 6px 0;
+    max-width: 92%;
+    padding: 8px 11px;
+    border: 1px solid #e9eaf0;
+    border-radius: 14px 14px 14px 4px;
+    color: #3b4453;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(17, 24, 39, .025);
+    font: 500 10.5px/1.45 -apple-system, BlinkMacSystemFont, 'Segoe UI', 'DM Sans', sans-serif;
+}
+
+.sn-landing .hero-visual .ad-card {
+    width: calc(100% - 13px);
+    margin: 0 0 0 0;
+    border: 1px solid #e1e5ed;
+    border-radius: 16px 16px 16px 5px;
+    background: #fff;
+    overflow: hidden;
+    box-shadow: 0 3px 8px rgba(23, 31, 50, .065);
+}
+
+.sn-landing .hero-visual .ad-media {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 132px;
+    margin: 0;
+    overflow: hidden;
+    box-shadow: none;
+}
+
+.sn-landing .hero-visual .ad-media-sale {
+    background: #edd0c6;
+}
+
+.sn-landing .hero-visual .prf-sale-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.sn-landing .hero-visual .prf-sale-caption {
+    position: absolute;
+    left: 12px;
+    top: 13px;
+    color: #49362e;
+    font: 800 9px/1.2 'DM Sans', sans-serif;
+    letter-spacing: .12em;
+    text-shadow: 0 1px 4px rgba(255, 255, 255, .5);
+}
+
+.sn-landing .hero-visual .ad-sale-tag {
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    padding: 4px 0;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1px;
+    color: #fff;
+    background: #252b35;
+    font: 800 16px/1 'DM Sans', sans-serif;
+    box-shadow: 0 3px 13px rgba(13, 20, 32, .16);
+}
+
+.sn-landing .hero-visual .ad-sale-tag small {
+    font-size: 8px;
+    letter-spacing: .08em;
+}
+
+.sn-landing .hero-visual .ad-media-bank {
+    background: linear-gradient(135deg, #e4ecfa, #f7f9ff);
+    padding: 10px;
+}
+
+.sn-landing .hero-visual .prf-bank-note {
+    width: 100%;
+    min-height: 106px;
+    padding: 9px 12px;
+    border-radius: 13px;
+    background: linear-gradient(125deg, #2456a1, #16366b 95%);
+    box-shadow: 0 9px 18px rgba(13, 40, 90, .17), inset 0 1px 0 rgba(255, 255, 255, .12);
+    color: white;
+}
+
+.sn-landing .hero-visual .prf-bank-note-top,
+.sn-landing .hero-visual .prf-bank-note-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.sn-landing .hero-visual .prf-bank-small {
+    font: 800 8px/1 'DM Sans', sans-serif;
+    letter-spacing: .1em;
+    opacity: .88;
+}
+
+.sn-landing .hero-visual .prf-bank-lock {
+    font: 700 7px/1 'DM Sans', sans-serif;
+    color: #bcf5d1;
+    letter-spacing: .02em;
+}
+
+.sn-landing .hero-visual .prf-bank-amount {
+    font: 700 27px/1.35 -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    letter-spacing: -.04em;
+    margin-top: 8px;
+}
+
+.sn-landing .hero-visual .prf-bank-detail {
+    font: 500 9.5px/1.3 'DM Sans', sans-serif;
+    color: #c9dafa;
+}
+
+.sn-landing .hero-visual .prf-bank-note-bottom {
+    padding-top: 8px;
+    font: 600 8px/1.2 'DM Sans', sans-serif;
+    color: #cfddf9;
+}
+
+.sn-landing .hero-visual .ad-media-health {
+    background: linear-gradient(145deg, #e7f8f3, #d9f1ed);
+    padding: 10px;
+}
+
+.sn-landing .hero-visual .prf-appointment-panel {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 13px;
+    background: white;
+    border: 1px solid #d5ece5;
+    border-radius: 12px;
+    box-shadow: 0 8px 14px rgba(19, 94, 80, .07);
+    padding: 12px 11px;
+}
+
+.sn-landing .hero-visual .prf-appointment-date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 59px;
+    border-radius: 9px;
+    background: #effaf5;
+    border: 1px solid #d1efe2;
+    color: #1d8267;
+    padding: 8px 0;
+}
+
+.sn-landing .hero-visual .prf-appointment-date span {
+    font: 700 9px/1.2 'DM Sans', sans-serif;
+    letter-spacing: .12em;
+}
+
+.sn-landing .hero-visual .prf-appointment-date strong {
+    font: 800 27px/1.13 'DM Sans', sans-serif;
+}
+
+.sn-landing .hero-visual .prf-appointment-date small {
+    font: 700 8px/1.3 'DM Sans', sans-serif;
+}
+
+.sn-landing .hero-visual .prf-appointment-details {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    min-width: 0;
+}
+
+.sn-landing .hero-visual .prf-appointment-details span {
+    color: #21836c;
+    font: 700 8px/1.2 'DM Sans', sans-serif;
+    letter-spacing: .02em;
+    white-space: nowrap;
+}
+
+.sn-landing .hero-visual .prf-appointment-details strong {
+    color: #1d3540;
+    font: 700 13px/1.2 'DM Sans', sans-serif;
+}
+
+.sn-landing .hero-visual .prf-appointment-details small {
+    color: #728080;
+    font: 500 9px/1.2 'DM Sans', sans-serif;
+}
+
+.sn-landing .hero-visual .prf-appointment-details em {
+    margin-top: 5px;
+    color: #166b57;
+    font: 700 9px/1.2 'DM Sans', sans-serif;
+    white-space: nowrap;
+}
+
+.sn-landing .hero-visual .ad-media-travel {
+    background: linear-gradient(145deg, #e3edfb, #f4f8ff);
+    padding: 9px;
+}
+
+.sn-landing .hero-visual .prf-flight-ticket {
+    width: 100%;
+    background: white;
+    border-radius: 13px;
+    border: 1px solid #dce6f4;
+    box-shadow: 0 7px 16px rgba(30, 66, 104, .085);
+    padding: 11px 13px;
+    color: #1b365e;
+}
+
+.sn-landing .hero-visual .prf-flight-ticket-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 7px;
+}
+
+.sn-landing .hero-visual .prf-flight-ticket-top>span:first-child {
+    font: 800 9px/1 'DM Sans', sans-serif;
+    letter-spacing: .09em;
+}
+
+.sn-landing .hero-visual .prf-on-time {
+    color: #147c55;
+    background: #e4f7e9;
+    border-radius: 9px;
+    padding: 4px 6px;
+    font: 700 8px/1 'DM Sans', sans-serif;
+}
+
+.sn-landing .hero-visual .prf-flight-route {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.sn-landing .hero-visual .prf-flight-route>div:not(.prf-flight-connector) {
+    display: flex;
+    flex-direction: column;
+}
+
+.sn-landing .hero-visual .prf-flight-route strong {
+    font: 800 19px/1.2 'DM Sans', sans-serif;
+}
+
+.sn-landing .hero-visual .prf-flight-route small {
+    font: 500 9px/1.2 'DM Sans', sans-serif;
+    color: #77899d;
+}
+
+.sn-landing .hero-visual .prf-flight-connector {
+    width: 91px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1px;
+}
+
+.sn-landing .hero-visual .prf-flight-connector span {
+    font: 700 8px/1 'DM Sans', sans-serif;
+    color: #7c94b2;
+}
+
+.sn-landing .hero-visual .prf-flight-connector i {
+    font: normal 17px/1 'DM Sans', sans-serif;
+    color: #3f7bc6;
+}
+
+.sn-landing .hero-visual .prf-flight-connector div {
+    width: 75px;
+    border-top: 1px dashed #b4c9e6;
+}
+
+.sn-landing .hero-visual .prf-flight-bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr .5fr;
+    gap: 7px;
+    margin-top: 9px;
+    padding-top: 8px;
+    border-top: 1px dashed #cdd9e7;
+}
+
+.sn-landing .hero-visual .prf-flight-bottom span {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    font: 800 10px/1.1 'DM Sans', sans-serif;
+}
+
+.sn-landing .hero-visual .prf-flight-bottom small {
+    font: 700 7px/1 'DM Sans', sans-serif;
+    color: #8799af;
+}
+
+.sn-landing .hero-visual .ad-body {
+    padding: 10px 11px 10px;
+}
+
+.sn-landing .hero-visual .ad-brand {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin: 0 0 7px;
+}
+
+.sn-landing .hero-visual .ad-logo {
+    flex: 0 0 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    color: #fff;
+    font: 800 12px/1 'DM Sans', sans-serif;
+    box-shadow: none;
+}
+
+.sn-landing .hero-visual .prf-logo-shop {
+    background: linear-gradient(140deg, #ff7d51, #f34563);
+}
+
+.sn-landing .hero-visual .prf-logo-bank {
+    background: #2a65b3;
+}
+
+.sn-landing .hero-visual .prf-logo-health {
+    background: #1a9c85;
+    font-size: 16px;
+}
+
+.sn-landing .hero-visual .prf-logo-travel {
+    background: #315c9b;
+}
+
+.sn-landing .hero-visual .ad-brand-meta {
+    gap: 2px;
+}
+
+.sn-landing .hero-visual .ad-brand-meta strong {
+    font: 700 10px/1.15 'DM Sans', sans-serif;
+    color: #272d37;
+}
+
+.sn-landing .hero-visual .ad-brand-meta span {
+    font: 400 9px/1.15 'DM Sans', sans-serif;
+    color: #89909d;
+}
+
+.sn-landing .hero-visual .ad-headline {
+    font: 800 13px/1.24 'DM Sans', sans-serif;
+    color: #242b39;
+    letter-spacing: -.02em;
+    margin: 0 0 5px;
+}
+
+.sn-landing .hero-visual .ad-desc {
+    font: 400 10.5px/1.42 'DM Sans', sans-serif;
+    color: #626d7c;
+    margin: 0 0 8px;
+}
+
+.sn-landing .hero-visual .ad-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin: 0 -11px -10px;
+    border-top: 1px solid #e8edf5;
+    padding: 0;
+}
+
+.sn-landing .hero-visual .ad-actions .chat-btn,
+.sn-landing .hero-visual .ad-actions .chat-btn.orange {
+    width: 100%;
+    min-height: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 7px 12px;
+    margin: 0;
+    border: 0;
+    border-radius: 0;
+    background: #fff;
+    box-shadow: none;
+    color: #236cce;
+    font: 700 10.5px/1.15 -apple-system, BlinkMacSystemFont, 'Segoe UI', 'DM Sans', sans-serif;
+    cursor: pointer;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+}
+
+.sn-landing .hero-visual .ad-actions .chat-btn+.chat-btn {
+    border-top: 1px solid #edf0f6;
+}
+
+.sn-landing .hero-visual .ad-actions .chat-btn:hover {
+    background: #f6f9ff;
+}
+
+.sn-landing .hero-visual .ad-actions .chat-btn span {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.sn-landing .hero-visual .prf-message-time {
+    width: calc(100% - 12px);
+    margin: 4px 0 4px 0;
+    font: 500 8px/1.25 'DM Sans', sans-serif;
+    text-align: right;
+    color: #9ca6b5;
+}
+
+.sn-landing .hero-visual .prf-message-time span {
+    padding: 0 2px;
+}
+
+.sn-landing .hero-visual .chat-bubble.ad-reply {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    max-width: 83%;
+    width: max-content;
+    padding: 7px 9px;
+    margin: 0 0 0 auto !important;
+    border: 0;
+    border-radius: 16px 16px 5px 16px !important;
+    background: #dceaff !important;
+    color: #2a4777;
+    box-shadow: none;
+}
+
+.sn-landing .hero-visual .chat-bubble.ad-reply p {
+    font: 500 10px/1.25 'DM Sans', sans-serif;
+    color: #2c4671 !important;
+    margin: 0;
+}
+
+.sn-landing .hero-visual .prf-checks {
+    color: #3b80d8;
+    font: 700 10px/1 Arial, sans-serif;
+    white-space: nowrap;
+}
+
+.sn-landing .hero-visual .ad-dots {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin: 0;
+    padding: 3px 0 0;
+    min-height: 11px;
+}
+
+.sn-landing .hero-visual .ad-dot {
+    appearance: none;
+    flex: 0 0 auto;
+    width: 14px;
+    height: 4px;
+    padding: 0;
+    border: 0;
+    border-radius: 5px;
+    background: #ccd4e1;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.sn-landing .hero-visual .ad-dot.active {
+    width: 27px;
+    background: #cfe0f7;
+}
+
+.sn-landing .hero-visual .ad-dot.active::after {
+    background: #3a77d2 !important;
+}
+
+.sn-landing .hero-visual .ad-dot:focus-visible {
+    outline: 2px solid #2d79dc;
+    outline-offset: 3px;
+}
+
+.sn-landing .hero-visual .prf-composer {
+    flex: 0 0 55px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 7px 11px;
+    border-top: 1px solid #eef0f5;
+    background: #fff;
+}
+
+.sn-landing .hero-visual .prf-composer-add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 22px;
+    color: #386ec1;
+}
+
+.sn-landing .hero-visual .prf-composer-field {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+    min-width: 0;
+    padding: 0 11px;
+    height: 36px;
+    border-radius: 23px;
+    border: 1px solid #e3e7ee;
+    background: #fff;
+    color: #989fae;
+    font: 400 10.5px/1 'DM Sans', sans-serif;
+}
+
+.sn-landing .hero-visual .prf-composer-field svg {
+    color: #8992a2;
+}
+
+.sn-landing .hero-visual .prf-composer-mic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #66778e;
+    flex: 0 0 20px;
+}
+
+.sn-landing .hero-visual .prf-home-bar {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 22px;
+    background: #fff;
+    height: 22px;
+}
+
+.sn-landing .hero-visual .prf-home-bar::after {
+    width: 102px;
+    height: 4px;
+    border-radius: 5px;
+    background: #202329;
+}
+
+/* Existing animated carousel stays untouched, but long content can be scrolled. */
+.sn-landing .hero-visual .ad-slide.entering {
+    animation: adSlideIn .55s cubic-bezier(.22, 1, .36, 1) forwards;
+}
+
+.sn-landing .hero-visual .ad-slide.leaving {
+    animation: adSlideOut .45s cubic-bezier(.55, 0, 1, .45) forwards;
+}
+
+@media (max-width:600px) {
+    .sn-landing .hero-visual .phone-realistic-frame {
+        width: 298px;
+        max-width: calc(100vw - 48px);
+        border-radius: 46px;
+    }
+
+    .sn-landing .hero-visual .prf-screen {
+        height: 637px;
+        border-radius: 39px;
+    }
+
+    .sn-landing .hero-visual .hero-chip {
+        display: none;
+    }
+}
+
+@media (max-width:370px) {
+    .sn-landing .hero-visual .phone-realistic-frame {
+        width: 268px;
+        max-width: calc(100vw - 42px);
+    }
+
+    .sn-landing .hero-visual .prf-screen {
+        height: 611px;
+    }
+
+    .sn-landing .hero-visual .ad-media {
+        height: 118px;
+    }
+
+    .sn-landing .hero-visual .ad-body {
+        padding: 9px;
+    }
+
+    .sn-landing .hero-visual .ad-actions {
+        margin: 0 -9px -9px;
+    }
+
+    .sn-landing .hero-visual .prf-inbound {
+        font-size: 10px;
+    }
+
+    .sn-landing .hero-visual .prf-appointment-panel {
+        gap: 8px;
+        padding: 9px 7px;
+    }
+
+    .sn-landing .hero-visual .prf-appointment-date {
+        flex-basis: 53px;
+    }
+
+    .sn-landing .hero-visual .prf-flight-connector {
+        width: 62px;
+    }
+}
+
+@media (prefers-reduced-motion:reduce) {
+
+    .sn-landing .hero-visual .ad-slide.entering,
+    .sn-landing .hero-visual .ad-slide.leaving {
+        animation-duration: .01ms !important;
+    }
+}
+
+/* Keep promotional floating metric chips outside the actual device glass. */
+@media (min-width:901px) {
+    .sn-landing .hero-visual .hero-chip.chip-2 {
+        bottom: -32px;
+        right: -12px;
+    }
+
+    .sn-landing .hero-visual .hero-chip.chip-1 {
+        top: -14px;
+        right: -28px;
+    }
+}
+
+/* The surrounding responsive hero centers its text; a chat conversation does not. */
+.sn-landing .hero-visual .phone-realistic-frame,
+.sn-landing .hero-visual .hero-phone-mockup,
+.sn-landing .hero-visual .ad-body,
+.sn-landing .hero-visual .prf-inbound {
+    text-align: left;
+}
+
+@media (max-width:370px) {
+    .sn-landing .hero-visual .prf-flight-ticket {
+        padding: 7px 9px;
+    }
+
+    .sn-landing .hero-visual .prf-flight-ticket-top {
+        margin-bottom: 3px;
+    }
+
+    .sn-landing .hero-visual .prf-flight-route strong {
+        font-size: 17px;
+    }
+
+    .sn-landing .hero-visual .prf-flight-bottom {
+        margin-top: 5px;
+        padding-top: 5px;
+    }
+}
+
+/* AD RESTORATION: keep the realistic Android device while making all four
+   original sponsored messages, offer buttons, and dismiss controls visible. */
+.sn-landing .hero-visual .phone-body {
+    position: relative;
+}
+
+.sn-landing .hero-visual .ad-card {
+    width: calc(100% - 9px);
+}
+
+.sn-landing .hero-visual .ad-media {
+    height: 137px;
+}
+
+.sn-landing .hero-visual .ad-media-sale {
+    background: #edd0c6;
+}
+
+.sn-landing .hero-visual .ad-media-bank {
+    background: linear-gradient(135deg, #e4ecfa, #f7f9ff);
+}
+
+.sn-landing .hero-visual .ad-media-health {
+    background: linear-gradient(145deg, #e7f8f3, #d9f1ed);
+}
+
+.sn-landing .hero-visual .ad-media-travel {
+    background: linear-gradient(145deg, #e3edfb, #f4f8ff);
+}
+
+.sn-landing .hero-visual .ad-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 5;
+    top: 9px;
+    left: 9px;
+    width: auto;
+    height: 19px;
+    border-radius: 5px;
+    padding: 2px 8px;
+    background: rgba(17, 24, 39, .73);
+    border: 1px solid rgba(255, 255, 255, .22);
+    color: white;
+    font: 700 9px/1 'DM Sans', sans-serif;
+    text-transform: none;
+    letter-spacing: .02em;
+    backdrop-filter: blur(5px);
+}
+
+.sn-landing .hero-visual .ad-dismiss {
+    display: flex;
+    position: absolute;
+    z-index: 6;
+    top: 7px;
+    right: 7px;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border: 1px solid rgba(255, 255, 255, .36);
+    border-radius: 50%;
+    padding: 0;
+    color: white;
+    background: rgba(16, 23, 34, .64);
+    font: 700 10px/1 Arial, sans-serif;
+    cursor: pointer;
+    backdrop-filter: blur(6px);
+}
+
+.sn-landing .hero-visual .ad-dismiss:hover,
+.sn-landing .hero-visual .ad-dismiss:focus-visible {
+    background: #172b4b;
+    outline: 2px solid white;
+    outline-offset: 1px;
+}
+
+.sn-landing .hero-visual .ad-sale-tag {
+    top: 35px;
+    right: 13px;
+    width: 51px;
+    height: 51px;
+    font-size: 13px;
+    padding: 0;
+}
+
+.sn-landing .hero-visual .prf-sale-caption {
+    top: auto;
+    bottom: 13px;
+    left: 13px;
+    font-size: 8.5px;
+    letter-spacing: .08em;
+    padding: 6px 8px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, .79);
+}
+
+.sn-landing .hero-visual .ad-brand-meta strong .icon {
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    stroke: #2879dd;
+    fill: none;
+}
+
+.sn-landing .hero-visual .ad-body {
+    padding: 10px 11px 10px;
+}
+
+.sn-landing .hero-visual .ad-headline {
+    font-size: 12.4px;
+    line-height: 1.22;
+}
+
+.sn-landing .hero-visual .ad-desc {
+    font-size: 10.4px;
+    line-height: 1.38;
+}
+
+.sn-landing .hero-visual .ad-actions .chat-btn,
+.sn-landing .hero-visual .ad-actions .chat-btn.orange {
+    background: #fff !important;
+    color: #236cce !important;
+}
+
+.sn-landing .hero-visual .ad-actions .chat-btn:hover {
+    background: #f0f6ff !important;
+}
+
+.sn-landing .hero-visual .chat-bubble.ad-reply {
+    width: max-content;
+    max-width: 90%;
+    margin: 5px 2px 0 auto !important;
+    padding: 8px 9px;
+    background: #dceaff !important;
+    border-radius: 14px 14px 5px 14px !important;
+}
+
+.sn-landing .hero-visual .chat-bubble.ad-reply p {
+    margin: 0;
+    font: 500 10px/1.35 'DM Sans', sans-serif;
+    color: #2b456d !important;
+}
+
+.sn-landing .hero-visual .prf-message-time {
+    margin: 4px 0 2px;
+    width: calc(100% - 9px);
+}
+
+.sn-landing .hero-visual .ad-logo {
+    border-radius: 6px;
+}
+
+.sn-landing .hero-visual .prf-action-toast {
+    position: absolute;
+    z-index: 10;
+    left: 13px;
+    right: 13px;
+    bottom: 61px;
+    border-radius: 12px;
+    padding: 10px 12px;
+    background: rgba(20, 34, 56, .96);
+    box-shadow: 0 6px 22px rgba(0, 0, 0, .25);
+    color: #fff;
+    font: 500 11px/1.38 'DM Sans', sans-serif;
+    text-align: center;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(8px);
+    transition: opacity .2s ease, transform .2s ease;
+}
+
+.sn-landing .hero-visual .prf-action-toast.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.sn-landing .hero-visual .ad-slide {
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+}
+
+@media(max-width:370px) {
+    .sn-landing .hero-visual .ad-media {
+        height: 119px;
+    }
+
+    .sn-landing .hero-visual .ad-headline {
+        font-size: 11.8px;
+    }
+
+    .sn-landing .hero-visual .ad-desc {
+        font-size: 10px;
+    }
+
+    .sn-landing .hero-visual .ad-badge {
+        font-size: 8px;
+        height: 17px;
+    }
+}
+
+.sn-landing .hero-visual .ad-media-bank .prf-bank-note-top {
+    padding-left: 39px;
+}
+
+/* Prevent the real-device demo from expanding the one-column hero on 320px phones. */
+@media (max-width:600px) {
+    .sn-landing .hero .hero-container {
+        width: 100%;
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .sn-landing .hero .hero-visual,
+    .sn-landing .hero .hero-content {
+        min-width: 0;
+        width: 100%;
+    }
+
+    .sn-landing .hero-visual .phone-realistic-frame {
+        margin-inline: auto;
+    }
+}
+
+@media (max-width:600px) {
+    .sn-landing .hero .hero-visual {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+}
+
+@media (max-width:600px) {
+    .sn-landing .hero .hero-visual {
+        width: calc(100% + 32px);
+        margin-left: -16px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .sn-landing .hero-visual .phone-realistic-frame {
+        flex: 0 0 auto;
+    }
+}
