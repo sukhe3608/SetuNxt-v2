@@ -220,40 +220,40 @@
       trustDesc: 'SetuNxt RCS customers report 3x higher engagement vs traditional SMS &mdash; with zero additional apps for end users.'
     },
 
-    Email: {
+    IVRS: {
       themeClass: 'snp-theme-email',
-      icon: 'fas fa-envelope-open-text',
-      label: 'Enterprise Email',
-      heroTitle: 'High-Impact Email<br>at Massive Scale',
-      heroDesc: 'Send transactional triggers and bulk promotional blasts with industry-leading deliverability, deep personalisation, and real-time analytics &mdash; all from one platform.',
+      icon: 'fas fa-phone-volume',
+      label: 'IVRS Solutions',
+      heroTitle: 'Intelligent Voice<br>Automation at Scale',
+      heroDesc: 'Deploy automated interactive voice response systems for OTP verification, appointment reminders, customer surveys, and smart call routing &mdash; all from one platform.',
       pills: [
-        { num: '98%', lbl: 'Delivery Rate' },
-        { num: '10M+', lbl: 'Emails / Day' },
-        { num: '40%', lbl: 'Avg. Open Rate' },
-        { num: '<1s', lbl: 'Send Latency' }
+        { num: '95%', lbl: 'Call Connect Rate' },
+        { num: '1M+', lbl: 'Calls / Day' },
+        { num: '<2s', lbl: 'Response Time' },
+        { num: '24/7', lbl: 'Availability' }
       ],
       featTag: 'What You Get',
-      featTitle: 'Enterprise-Grade Email Features',
-      featSub: 'Every tool you need to send, personalise, and optimise email at scale.',
+      featTitle: 'Enterprise-Grade IVRS Features',
+      featSub: 'Every tool you need to build, deploy, and optimise voice automation at scale.',
       features: [
-        { ico: 'fas fa-paper-plane', cls: 'ico-orange', title: 'Transactional Emails', desc: 'Order confirmations, OTPs, and receipts delivered in milliseconds.' },
-        { ico: 'fas fa-bullhorn', cls: 'ico-orange', title: 'Promotional Campaigns', desc: 'Bulk blasts with smart segmentation for maximum relevance.' },
-        { ico: 'fas fa-sliders-h', cls: 'ico-orange', title: 'Drag-and-Drop Builder', desc: 'Design pixel-perfect emails without writing a single line of code.' },
-        { ico: 'fas fa-chart-line', cls: 'ico-orange', title: 'Real-Time Analytics', desc: 'Open rates, click maps, and conversions tracked live per campaign.' },
-        { ico: 'fas fa-server', cls: 'ico-orange', title: 'Dedicated IPs', desc: 'Dedicated sending IPs and guided domain warmup for inbox placement.' },
-        { ico: 'fas fa-flask', cls: 'ico-orange', title: 'A/B Testing', desc: 'Test subject lines, content, and CTAs to maximise performance.' }
+        { ico: 'fas fa-phone-alt', cls: 'ico-orange', title: 'Voice OTP & Alerts', desc: 'Automated voice calls for OTP delivery, payment alerts, and critical notifications.' },
+        { ico: 'fas fa-sitemap', cls: 'ico-orange', title: 'Multi-Level IVR Menus', desc: 'Build intelligent call flows with nested menus and smart routing logic.' },
+        { ico: 'fas fa-chart-line', cls: 'ico-orange', title: 'Real-Time Call Analytics', desc: 'Live dashboards for call connect rates, drop-offs, and response tracking.' },
+        { ico: 'fas fa-random', cls: 'ico-orange', title: 'Smart Call Routing', desc: 'Route calls to agents or departments based on customer input and availability.' },
+        { ico: 'fas fa-microphone', cls: 'ico-orange', title: 'Text-to-Speech', desc: 'Convert any text to natural-sounding voice prompts in multiple languages.' },
+        { ico: 'fas fa-clipboard-list', cls: 'ico-orange', title: 'Voice Surveys', desc: 'Conduct automated customer satisfaction surveys via interactive voice calls.' }
       ],
       howTag: 'How It Works',
-      howTitle: 'Launch Your First Campaign in 4 Steps',
+      howTitle: 'Go Live with IVRS in 4 Steps',
       steps: [
-        { num: '01', title: 'Connect Domain', desc: 'Authenticate your sending domain for maximum deliverability.' },
-        { num: '02', title: 'Build Template', desc: 'Use the visual editor or import your existing HTML templates.' },
-        { num: '03', title: 'Segment List', desc: 'Upload contacts, build segments, and personalise at scale.' },
-        { num: '04', title: 'Send & Optimise', desc: 'Launch, monitor opens & clicks, and A/B test continuously.' }
+        { num: '01', title: 'Configure DID', desc: 'Set up your dedicated inbound/outbound numbers for IVRS campaigns.' },
+        { num: '02', title: 'Build IVR Flow', desc: 'Design call flows using our visual drag-and-drop IVR builder.' },
+        { num: '03', title: 'Record Prompts', desc: 'Upload custom audio or use our AI text-to-speech engine.' },
+        { num: '04', title: 'Launch & Monitor', desc: 'Go live and track call analytics in real time.' }
       ],
-      trustIco: '<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#f07c1a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 16 12 14 15 10 15 8 12 2 12"/><path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"/></svg>',
-      trustTitle: '98% Inbox Delivery Guarantee',
-      trustDesc: 'Our dedicated IP infrastructure and warmup process ensures your emails land in the inbox, not spam &mdash; every time.'
+      trustIco: '<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#f07c1a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m22 16.92-3.09-1.34a2 2 0 0 0-2.23.45l-1.08 1.08a16.5 16.5 0 0 1-8.71-8.71l1.08-1.08a2 2 0 0 0 .45-2.23L7.08 2a2 2 0 0 0-2.1-1.18L3 1.1A2 2 0 0 0 1.2 3.2 20.8 20.8 0 0 0 20.8 22.8 2 2 0 0 0 22.9 21l.28-1.98A2 2 0 0 0 22 16.92Z"/></svg>',
+      trustTitle: '95% Call Connect Rate Guaranteed',
+      trustDesc: 'Our carrier-grade IVRS infrastructure ensures maximum call connect rates with intelligent failover and retry logic &mdash; every time.'
     },
 
     WhatsApp: {
